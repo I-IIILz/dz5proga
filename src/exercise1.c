@@ -1,6 +1,14 @@
 #include <stdio.h>
 
 int main(int argc, char** argv) {
-    printf("Hello World!");
-    return 0;
+    double array[10];
+    double sum = 0;
+    for(int i= 0; i<10; i++){
+        scanf("%lf", &array[i]);
+    }
+    for(int i=0;i<10;i++){
+        sum += array[i];
+    }
+    double sa = sum/10;
+    printf("%.2f",sa);
 }
